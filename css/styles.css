@@ -4,6 +4,7 @@
     --main-color: #212121;
     --secondary-color: #757575;
     --accent-color: #2196F3;
+    --main-font-size: 14px;
 }
 .list {
 list-style: none;
@@ -12,8 +13,9 @@ list-style: none;
     text-decoration: none;
 }
 body{
-    font-family: var(--main-font)
-    color: var(--main-color)
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-size: var(--main-font-size);   
 }
 /* ====================Шапка===================== */
 .logo {
@@ -22,6 +24,7 @@ body{
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    
     color: #000000;
 }
 
@@ -31,9 +34,9 @@ body{
 
 .site-nav-link {
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+
 color: var(--main-color)
 }
 
@@ -46,7 +49,7 @@ color: var(--main-color)
 }
 .mail-tel-link { 
 font-weight: 500;
-font-size: 14px;
+
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-color);
@@ -74,14 +77,124 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
-.button {
+.main-button {
+font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
-display: inline-block;
 letter-spacing: 0.06em;
 cursor: pointer;
 
 background: var(--accent-color);
 color: #FFFFFF;
+}
+
+/*=======================Преимущества================================ */
+
+.advantages-title {
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.advantages-text {
+font-weight: 400;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: var(--secondary-color);
+
+}
+
+/* ================Чем занимается студия============== */
+.section-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+}
+/* =================Наша команда==================== */
+.team-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+}
+.team-position {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+
+color:var(--secondary-color);
+
+}
+
+/* ====================Портфолио кнопки=========== */
+.portfolio-button {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+
+color:var(--main-color);
+background: #F5F4FA;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus{
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+/* ====================Портфолио список картинок========== */
+.portfolio-img-title {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+
+color:var(--main-color);
+
+}
+.portfolio-list-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+
+color:var(--secondary-color);
+}
+/* ===================Подвал===================== */
+.footer {
+background: #2F303A;
+}
+.logo-footer {
+    color: #FFFFFF;
+}
+
+.address {
+font-family: var(--main-font);
+font-style: normal;
+}
+.address-link {
+font-weight: 400;
+
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+}
+
+.address-mail, 
+.address-tel{
+font-weight: 400;
+
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
 }
