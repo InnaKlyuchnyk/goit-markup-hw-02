@@ -5,6 +5,11 @@
     --secondary-color: #757575;
     --accent-color: #2196F3;
     --main-font-size: 14px;
+    --background-color: #2F303A;
+    --main-light-color: #ffffff;
+    --logo-black-color: #000000;
+    --light-background-buttons-color: #F5F4FA;
+    --footer-mail-color: rgba(255, 255, 255, 0.6);
 }
 .list {
 list-style: none;
@@ -15,24 +20,26 @@ list-style: none;
 body{
     font-family: var(--main-font);
     color: var(--main-color);
-    font-size: var(--main-font-size);   
+    font-size: var(--main-font-size); 
+    font-weight: 400; 
+    line-height: 1.19; 
+    letter-spacing: 0.03em;
 }
 /* ====================Шапка===================== */
 .logo {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
     
-    color: #000000;
+    color: var(--logo-black-color);
 }
 
 .logo-part {
     color: var(--accent-color);
 }
 
-.site-nav-link {
+.site-nav-link,
+.mail-tel-link {
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
@@ -41,29 +48,22 @@ color: var(--main-color)
 }
 
 .site-nav-link:hover,
-.site-nav-link:focus {
+.site-nav-link:focus,
+.mail-tel-link:hover,
+.mail-tel-link:focus {
     color: var(--accent-color);
 }
 .site-nav-link.current {
     color: var(--accent-color);
 }
 .mail-tel-link { 
-font-weight: 500;
-
-line-height: 1.14;
-letter-spacing: 0.02em;
 color: var(--secondary-color);
-}
-
-.mail-tel-link:hover,
-.mail-tel-link:focus {
-    color: var(--accent-color);
 }
 
 /* ========================Герой==================== */
 
 .hero {
-background: #2F303A;
+background:var(--background-color);
 text-align: center;
 }
 
@@ -74,7 +74,7 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
-color: #FFFFFF;
+color: var(--main-light-color);
 }
 
 .main-button {
@@ -86,7 +86,7 @@ letter-spacing: 0.06em;
 cursor: pointer;
 
 background: var(--accent-color);
-color: #FFFFFF;
+color: var(--main-light-color);
 }
 
 /*=======================Преимущества================================ */
@@ -94,14 +94,10 @@ color: #FFFFFF;
 .advantages-title {
 font-weight: 700;
 line-height: 1.14;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 }
 .advantages-text {
-font-weight: 400;
 line-height: 1.71;
-letter-spacing: 0.03em;
-
 color: var(--secondary-color);
 
 }
@@ -112,23 +108,15 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
-letter-spacing: 0.03em;
 }
 /* =================Наша команда==================== */
 .team-title {
 font-weight: 500;
 font-size: 16px;
-line-height: 1.19;
-letter-spacing: 0.03em;
 }
 .team-position {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-
 color:var(--secondary-color);
-
+font-size: 16px;
 }
 
 /* ====================Портфолио кнопки=========== */
@@ -141,12 +129,12 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color:var(--main-color);
-background: #F5F4FA;
+background: var(--light-background-buttons-color);
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus{
-    color: #FFFFFF;
+    color: var(--main-light-color);
     background-color: var(--accent-color);
     cursor: pointer;
 }
@@ -161,40 +149,28 @@ color:var(--main-color);
 
 }
 .portfolio-list-text {
-font-weight: 400;
 font-size: 16px;
 line-height: 1.87;
-letter-spacing: 0.03em;
 
 color:var(--secondary-color);
 }
 /* ===================Подвал===================== */
 .footer {
-background: #2F303A;
+background: var(--background-color);
 }
 .logo-footer {
-    color: #FFFFFF;
+    color: var(--main-light-color);
 }
 
 .address {
 font-family: var(--main-font);
 font-style: normal;
+line-height: 1.71;
 }
 .address-link {
-font-weight: 400;
-
-line-height: 1.71;
-letter-spacing: 0.03em;
-
-color: #FFFFFF;
+color: var(--main-light-color);
 }
 
-.address-mail, 
-.address-tel{
-font-weight: 400;
-
-line-height: 1.71;
-letter-spacing: 0.03em;
-
-color: rgba(255, 255, 255, 0.6);
+.address-mail-tel {
+color: var(--footer-mail-color);
 }
