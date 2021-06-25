@@ -11,6 +11,18 @@
     --light-background-buttons-color: #F5F4FA;
     --footer-mail-color: rgba(255, 255, 255, 0.6);
 }
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
 .list {
 list-style: none;
 }
@@ -25,17 +37,62 @@ body{
     line-height: 1.19; 
     letter-spacing: 0.03em;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/* ====================Компоненты================== */
+.section-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+margin-bottom: 50px;
+}
+
 /* ====================Шапка===================== */
+.header {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+.mail-tel {
+    display: flex;
+    align-items: center;
+}
 .logo {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
+    margin-right: 93px;
     
     color: var(--logo-black-color);
 }
 
 .logo-part {
     color: var(--accent-color);
+}
+
+.site-nav-list:not(:last-child) {
+    margin-right: 50px;
 }
 
 .site-nav-link,
@@ -55,6 +112,12 @@ color: var(--main-color)
 }
 .site-nav-link.current {
     color: var(--accent-color);
+}
+.mail-tel{
+ margin-left: auto; 
+}
+.mail-tel-list:not(:last-child){
+    margin-right: 50px;
 }
 .mail-tel-link { 
 color: var(--secondary-color);
@@ -78,11 +141,13 @@ color: var(--main-light-color);
 }
 
 .main-button {
+border-radius: 4px;
 font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
+padding: 10px 32px;
 cursor: pointer;
 
 background: var(--accent-color);
@@ -103,13 +168,14 @@ color: var(--secondary-color);
 }
 
 /* ================Чем занимается студия============== */
-.section-title {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-}
+
 /* =================Наша команда==================== */
+.our-team{
+    background:var(--light-background-buttons-color);
+}
+.team-list{
+    display: flex;
+}
 .team-title {
 font-weight: 500;
 font-size: 16px;
